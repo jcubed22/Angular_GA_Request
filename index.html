@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="gaRequest">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <title>Graphic Artist Request Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Beaming White Graphics Request Form</h1>
+
+      <form id="request-form">
+        <div class="form-group">
+          <label for="job-name">Job Name (New or Existing)</label>
+          <input id="job-name" class="form-control" name="job-name" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="job-type">Job Type</label>
+          <select id="job-type" class="form-control" name="job-type">
+            <option value="marketing">Marketing Material</option>
+            <option value="inventory">Inventory</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="media-type">Media Type</label>
+          <select id="media-type" class="form-control" name="media-type">
+            <option value="printed">Printed Material</option>
+            <option value="web">Web Material</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="dimensions">Dimensions/Specifications</label>
+          <input id="dimensions" class="form-control" name="dimensions" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="duedate">Due Date</label>
+          <input id="duedate" class="form-control" type="date" name="duedate" />
+          (Note: All jobs that require printing MUST be submitted and approved AT LEAST 10 days prior to due date)
+        </div>
+        <div class="form-group">
+          <label for="item-number">Item #</label>
+          <input id="item-number" class="form-control" name="item-number" type="text" />
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+      </form>
+    </div>
+    <script src="vendor/angular.min.js" type="text/javascript"></script>
+    <script src="scripts/app.js" type="text/javascript"></script>
+  </body>
+</html>
