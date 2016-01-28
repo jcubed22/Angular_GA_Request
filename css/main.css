@@ -1,1 +1,20 @@
+#request-form {
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.31);
+    -moz-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.31);
+    box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.31);
+    padding: 2% 4%;
+}
 
+#request-form h3 {
+    margin-top: 0;
+}
+
+#request-form a img {
+    margin-left: 10px;
+}
+
+#test {
+    font-size: 18px;
+}
