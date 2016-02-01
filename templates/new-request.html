@@ -1,0 +1,40 @@
+<div id="request-form">
+    <header>
+        <h3>New GA Request</h3>
+    </header>
+    <span id="new-request"><a href="" ng-click="newRequest = !newRequest">Submit New Request<img src="css/icons/add.png" /></a></span>
+    <form ng-show="newRequest">
+      <div class="form-group">
+        <label for="job-name">Job Name (New or Existing)</label>
+        <input id="job-name" name="job-name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="job-type">Job Type</label>
+        <select id="job-type" name="job-type">
+          <option value="marketing">Marketing</option>
+          <option value="inventory">Inventory</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="media-type">Media Type</label>
+        <select id="media-type" name="media-type">
+          <option value="printed">Printed</option>
+          <option value="web">Web</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="dimensions">Dimensions/Specifications</label>
+        <input id="dimensions" name="dimensions" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="duedate">Due Date</label>
+        <input id="duedate" type="date" name="duedate" />
+        (Note: All jobs that require printing MUST be submitted and approved AT LEAST 10 days prior to due date)
+      </div>
+      <div class="form-group">
+        <label for="item-number">Item #</label>
+        <input id="item-number" name="item-number" type="text" />
+      </div>
+      <button type="submit" class="btn btn-primary" ng-click="newRequest = false">Submit Request</button>
+    </form>
+</div>
