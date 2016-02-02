@@ -6,7 +6,8 @@
         "dimensions": "3x5",
         "dueDate": "A string of some kind",
         "itemNumber": "24059502958",
-        "requestedBy": "Steve"
+        "requestedBy": "Steve",
+        "submitDate": "1/31/2016"
     },
     {
         "name": "Some other thing",
@@ -15,7 +16,8 @@
         "dimensions": "4x4",
         "dueDate": "Some bullshit",
         "itemNumber": "98240174951",
-        "requestedBy": "John"
+        "requestedBy": "John",
+        "submitDate": "2/15/2016"
     },
     {
         "name": "Tooth stuff",
@@ -24,6 +26,7 @@
         "dimensions": "2x3",
         "dueDate": "Some date",
         "itemNumber": "32941830284",
-        "requestedBy": "Chuck"
+        "requestedBy": "Chuck",
+        "submitDate": "3/3/2016"
     }
 ]
