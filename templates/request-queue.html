@@ -41,7 +41,7 @@
                 </th>
                 <th>
                     <a href="#" ng-click="sortType = 'dimensions'; sortReverse = !sortReverse">
-                        Job Name
+                        Dimensions
                         <span ng-show="sortType == 'dimensions' && !sortReverse" class="fa fa-caret-down"></span>
                         <span ng-show="sortType == 'dimensions' && sortReverse" class="fa fa-caret-up"></span>
                     </a>
@@ -70,8 +70,8 @@
             </tr>
         </thead>
         <tfoot></tfoot>
-        <tbody ng-repeat="request in requests | orderBy:sortType:sortReverse | filter: searchRequests">
-            <tr>
+        <tbody>
+            <tr ng-repeat="request in requests | orderBy:sortType:sortReverse | filter: searchRequests">
                 <td>{{request.name}}</td>
                 <td>{{request.itemNumber}}</td>
                 <td>{{request.jobType}}</td>
