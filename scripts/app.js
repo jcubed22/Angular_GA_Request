@@ -1,1 +1,1 @@
-var gaRequest = angular.module('gaRequest', []); 
+angular.module('gaRequest', []); 

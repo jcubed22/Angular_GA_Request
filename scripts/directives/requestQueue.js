@@ -1,4 +1,5 @@
-gaRequest.directive('requestQueue', function() {
+angular.module('gaRequest')
+.directive('requestQueue', function() {
     return {
         templateUrl: 'templates/request-queue.html',
         controller: 'mainCtrl',
