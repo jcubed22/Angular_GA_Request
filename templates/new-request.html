@@ -1,44 +1,44 @@
 <div id="request-form">
-    <header>
-        <h3>New GA Request</h3>
-    </header>
-    <span id="new-request"><a href="" ng-click="newRequest = !newRequest"><img src="css/icons/add.png" />Create New Ticket</a></span>
-    <form class="form-inline" ng-show="newRequest"  ng-submit="dataService.addRequest()">
-        <div class="form-group">
-            <label for="job-name">Job Name (New or Existing)</label>
-            <input id="job-name" name="job-name" type="text" ng-model="fields.jobName" />
-        </div>
-        <div class="form-group">
-            <label for="job-type">Job Type</label>
-            <select id="job-type" name="job-type" ng-model="fields.jobType">
-                <option value="Marketing">Marketing</option>
-                <option value="Inventory">Inventory</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="media-type">Media Type</label>
-            <select id="media-type" name="media-type" ng-model="fields.mediaType">
-                <option value="Printed">Printed</option>
-                <option value="Web">Web</option>
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="dimensions">Dimensions/Specifications</label>
-            <input id="dimensions" name="dimensions" type="text" ng-model="fields.dimensions" />
-        </div>
-        <div class="form-group">
-            <label for="duedate">Due Date</label>
-            <input id="duedate" type="date" name="duedate" ng-model="fields.dueDate" />
-            (Note: All jobs that require printing MUST be submitted and approved AT LEAST 10 days prior to due date)
-        </div>
-        <div class="form-group">
-            <label for="item-number">Item #</label>
-            <input id="item-number" name="item-number" type="text" ng-model="fields.itemNumber" />
-        </div>
-        <div class="form-group">
-            <label for="requested-by">Requested By</label>
-            <input id="requested-by" name="requested-by" type="text" ng-model="fields.requestedBy" />
-        </div>
-        <button type="submit" class="btn btn-primary" ng-click="newRequest = false">Submit Request</button>
-    </form>
+  <header>
+    <h3>New GA Request</h3>
+  </header>
+  <span id="new-request"><a href="" ng-click="newRequest = !newRequest"><img src="css/icons/add.png" />Create New Ticket</a></span>
+  <form class="form-inline" ng-show="newRequest"  ng-submit="dataService.addRequest()">
+    <div class="form-group">
+      <label for="job-name">Job Name (New or Existing)</label>
+      <input id="job-name" name="job-name" type="text" ng-model="fields.jobName" />
+    </div>
+    <div class="form-group">
+      <label for="job-type">Job Type</label>
+      <select id="job-type" name="job-type" ng-model="fields.jobType">
+        <option value="Marketing">Marketing</option>
+        <option value="Inventory">Inventory</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="media-type">Media Type</label>
+      <select id="media-type" name="media-type" ng-model="fields.mediaType">
+        <option value="Printed">Printed</option>
+        <option value="Web">Web</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="dimensions">Dimensions/Specifications</label>
+      <input id="dimensions" name="dimensions" type="text" ng-model="fields.dimensions" />
+    </div>
+    <div class="form-group">
+      <label for="duedate">Due Date</label>
+      <input id="duedate" type="date" name="duedate" ng-model="fields.dueDate" />
+      (Note: All jobs that require printing MUST be submitted and approved AT LEAST 10 days prior to due date)
+    </div>
+    <div class="form-group">
+      <label for="item-number">Item #</label>
+      <input id="item-number" name="item-number" type="text" ng-model="fields.itemNumber" />
+    </div>
+    <div class="form-group">
+      <label for="requested-by">Requested By</label>
+      <input id="requested-by" name="requested-by" type="text" ng-model="fields.requestedBy" />
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="newRequest = false">Submit Request</button>
+  </form>
 </div>

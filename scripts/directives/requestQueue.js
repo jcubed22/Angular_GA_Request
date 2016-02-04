@@ -1,8 +1,8 @@
 angular.module('gaRequest')
 .directive('requestQueue', function() {
-    return {
-        templateUrl: 'templates/request-queue.html',
-        controller: 'mainCtrl',
-        replace: true
-    }
+  return {
+    templateUrl: 'templates/request-queue.html',
+    controller: 'mainCtrl',
+    replace: true
+  }
 });
