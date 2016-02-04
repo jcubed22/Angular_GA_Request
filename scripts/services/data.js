@@ -24,7 +24,9 @@ angular.module('gaRequest')
   };
 
   this.addRequest = function() {
-    console.log("I worked!");
+    //Sets variable equal to current date as formatted by moment.js
+    var now = moment().format("MM/DD/YYYY");
+    // var due = moment(fields.dueDate, "MM/DD/YYYY");
     var response = {
       jobName: fields.jobName,
       jobType: fields.jobType,
@@ -33,7 +35,7 @@ angular.module('gaRequest')
       dueDate: fields.dueDate,
       itemNumber: fields.itemNumber,
       requestedBy: fields.requestedBy,
-      submitDate: "Today"
+      submitDate: now
     };
     this.testRequests.push(response);
     fields.jobName = null;
@@ -43,7 +45,6 @@ angular.module('gaRequest')
     fields.dueDate = null;
     fields.itemNumber = null;
     fields.requestedBy = null;
-    // fields.submitDate = null;
   };
 
   this.deleteRequest = function(request, $index) {
