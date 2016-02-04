@@ -3,7 +3,7 @@
         <h3>New GA Request</h3>
     </header>
     <span id="new-request"><a href="" ng-click="newRequest = !newRequest"><img src="css/icons/add.png" />Create New Ticket</a></span>
-    <form class="form-inline" ng-show="newRequest"  ng-submit="addRequest()">
+    <form class="form-inline" ng-show="newRequest"  ng-submit="dataService.addRequest()">
         <div class="form-group">
             <label for="job-name">Job Name (New or Existing)</label>
             <input id="job-name" name="job-name" type="text" ng-model="fields.jobName" />
