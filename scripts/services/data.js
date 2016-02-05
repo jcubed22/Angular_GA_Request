@@ -40,8 +40,8 @@ angular.module('gaRequest')
     };
     this.testRequests.push(response);
     fields.jobName = null; // Reset form fields to null for next input.
-    fields.jobType = null;
-    fields.mediaType = null;
+    fields.jobType = "Marketing";
+    fields.mediaType = "Printed";
     fields.dimensions = null;
     fields.dueDate = null;
     fields.itemNumber = null;
