@@ -2,6 +2,9 @@
 
 angular.module('gaRequest')
 .service('dataService', function($http) {
+  // Is there a better way to do this besides
+  // creating a variable and then setting it equal to
+  // this.something?
   var fields = {};
   var testRequests = [
     {
