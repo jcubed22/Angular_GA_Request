@@ -2,7 +2,6 @@
 
 angular.module('gaRequest')
 .controller('queueCtrl', function($scope, dataService) {
-  $scope.dataService = dataService;
   $scope.testRequests = dataService.testRequests;
   $scope.fields = dataService.fields;
 
@@ -15,5 +14,13 @@ angular.module('gaRequest')
   $scope.sortType = 'submitDate'; // Set default sort type
   $scope.sortReverse = false; // Set default sort order
   $scope.searchRequests = ''; // Set default search/filter term
+
+  /* Passing in index from an ng-repeat with orderBy or a filter
+  results in incorrect items being deleted.  Pass in the item itself
+  (in this case request), and find the index of that item in the array. */
+  $scope.deleteRequest = function(request) {
+    var index = $scope.testRequests.indexOf(request);
+    $scope.testRequests.splice(index, 1);
+  }
 
 });
